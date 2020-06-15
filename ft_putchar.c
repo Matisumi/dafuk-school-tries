@@ -6,6 +6,13 @@
 /*   By: savitull <savitull@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/15 14:46:16 by savitull          #+#    #+#             */
-/*   Updated: 2020/06/15 14:58:02 by savitull         ###   ########.fr       */
+/*   Updated: 2020/06/15 16:10:14 by savitull         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <unistd.h>
+
+void	ft_putchar(char c)
+{
+	write(1, c, 1);
+}

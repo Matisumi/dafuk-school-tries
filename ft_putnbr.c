@@ -6,6 +6,14 @@
 /*   By: savitull <savitull@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/15 14:46:29 by savitull          #+#    #+#             */
-/*   Updated: 2020/06/15 14:58:10 by savitull         ###   ########.fr       */
+/*   Updated: 2020/06/15 16:16:27 by savitull         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+
+void	ft_putnbr(int nb)
+{
+	if (nb > 9)
+		ft_putnbr(nb / 10);
+	ft_putchar((nb%10) + 48);
+}

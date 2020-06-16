@@ -1,20 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: savitull <savitull@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/06/15 14:01:27 by savitull          #+#    #+#             */
-/*   Updated: 2020/06/16 10:02:22 by savitull         ###   ########.fr       */
+/*   Created: 2020/06/16 09:52:29 by savitull          #+#    #+#             */
+/*   Updated: 2020/06/16 10:08:09 by savitull         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
 
-int		ft_isalpha(int c)
-{
-	if ((c >= 65 && c <= 90) || (c >=97 && c <=122))
-		return(1);
-	return(0);
-}
+#ifndef LIBFT_H
+
+# define LIBFT_H
+
+# include <unistd.h>
+# include <stdlib.h>
+# include <string.h>
+
+int		ft_isdigit(int c);
+int		ft_isalpha(int c);
+int		ft_isalnum(int c);
+int		ft_atoi(const char *str);
+int		ft_isascii(int c);
+
+
+#endif

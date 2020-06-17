@@ -36,7 +36,7 @@ all :	$(NAME) clean
 
 $(NAME):
 		$(CC) -c $(SRCP1) $(CFLAGS)
-		ar -cr $(OBJP1)
+		ar -rc $(NAME) $(OBJP1)
 
 clean :
 		rm -f $(OBJP1)

@@ -6,6 +6,13 @@
 /*   By: savitull <savitull@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/15 13:50:13 by savitull          #+#    #+#             */
-/*   Updated: 2020/06/15 14:56:19 by savitull         ###   ########.fr       */
+/*   Updated: 2020/06/17 15:21:47 by savitull         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
+
+void	ft_bzero(void *s, size_t n)
+{
+	s = ft_memset(s, 0, n);
+}

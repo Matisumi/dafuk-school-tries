@@ -6,6 +6,13 @@
 /*   By: savitull <savitull@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/15 14:02:52 by savitull          #+#    #+#             */
-/*   Updated: 2020/06/15 14:59:06 by savitull         ###   ########.fr       */
+/*   Updated: 2020/06/18 12:06:24 by savitull         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+int		ft_tolower(int c)
+{
+	if (c >= 'A' && c <= 'Z')
+		return(c + 32);
+	return(c);
+}

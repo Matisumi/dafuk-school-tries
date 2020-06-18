@@ -6,6 +6,19 @@
 /*   By: savitull <savitull@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/15 14:01:01 by savitull          #+#    #+#             */
-/*   Updated: 2020/06/15 14:58:41 by savitull         ###   ########.fr       */
+/*   Updated: 2020/06/18 11:39:43 by savitull         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
+
+size_t		ft_strlen(const char *s)
+{
+	size_t i;
+
+	i = 0;
+
+	while (s[i])
+		i++;
+	return(i);
+}

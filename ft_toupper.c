@@ -6,6 +6,13 @@
 /*   By: savitull <savitull@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/15 14:02:36 by savitull          #+#    #+#             */
-/*   Updated: 2020/06/15 14:59:09 by savitull         ###   ########.fr       */
+/*   Updated: 2020/06/18 12:04:56 by savitull         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+int		ft_toupper(int c)
+{
+	if (c >= 'a' && c <= 'z')
+		return(c - 32);
+	return(c);
+}

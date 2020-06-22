@@ -6,7 +6,7 @@
 /*   By: savitull <savitull@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/15 14:05:41 by savitull          #+#    #+#             */
-/*   Updated: 2020/06/19 15:30:12 by savitull         ###   ########.fr       */
+/*   Updated: 2020/06/22 18:04:05 by savitull         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 
 	if (dstsize == 0)
 		return(ft_strlen(src));
+	if (src == NULL)
+		return(0);
 	while ((i < dstsize -1) && src[i])
 	{
 		dst[i] = src[i];

@@ -30,16 +30,22 @@ SRCP1	=	ft_memset.c		\
 			ft_calloc.c		\
 			ft_strdup.c
 
+SRCP2	=	ft_substr.c 	\
+			ft_strjoin.c 	\
+			ft_strtrim.c
+
 OBJP1	=	$(SRCP1:.c=.o)
+
+OBJP2	=	$(SRCP2:.c=.o)
 
 all :	$(NAME) clean
 
 $(NAME):
-		$(CC) -c $(SRCP1) $(CFLAGS)
-		ar -rc $(NAME) $(OBJP1)
+		$(CC) -c $(SRCP1) $(SRCP2) $(CFLAGS)
+		ar -rc $(NAME) $(OBJP1) $(OBJP2)
 
 clean :
-		rm -f $(OBJP1)
+		rm -f $(OBJP1) $(OBJP2)
 
 fclean:	clean
 		rm -f $(NAME)

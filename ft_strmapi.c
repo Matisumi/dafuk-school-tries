@@ -6,6 +6,13 @@
 /*   By: savitull <savitull@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/15 14:30:15 by savitull          #+#    #+#             */
-/*   Updated: 2020/06/15 14:58:44 by savitull         ###   ########.fr       */
+/*   Updated: 2020/07/01 11:08:30 by savitull         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
+
+char	*ft_strmapi(char const *s, char (f*)(unsigned int, char))
+{
+	
+}

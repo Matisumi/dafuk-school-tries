@@ -6,6 +6,13 @@
 /*   By: savitull <savitull@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/15 14:30:00 by savitull          #+#    #+#             */
-/*   Updated: 2020/06/15 14:57:30 by savitull         ###   ########.fr       */
+/*   Updated: 2020/07/02 16:39:06 by savitull         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
+
+char	*ft_itoa(int n)
+{
+	
+}

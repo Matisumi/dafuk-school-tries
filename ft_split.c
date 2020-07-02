@@ -6,7 +6,7 @@
 /*   By: savitull <savitull@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/15 14:29:27 by savitull          #+#    #+#             */
-/*   Updated: 2020/07/01 10:59:23 by savitull         ###   ########.fr       */
+/*   Updated: 2020/07/02 16:31:16 by savitull         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,21 +30,44 @@ static int	ft_count(char const *s, char c)
 		}
 		i++;
 	}
-	return(tot)
+	return(tot);
+}
+
+static void	ft_freetab(char **tab)
+{
+	int i;
+
+	i = 0;
+	while(tab[i])
+		free(tab[i++]);
+	free(tab);
 }
 
 char	**ft_split(char const *s, char c)
 {
 	unsigned int 	i;
-	unsigned int	end
-	int 			count;
+	unsigned int	len;
+	int				x;
 	char			**tab;
 
 	i = 0;
-	count = ft_count(s, c);
-
-	if(!(tab = (char**)malloc(sizeof(char *) * count + 1)))
+	if(!s || !(tab = (char**)malloc(sizeof(char *) * ft_count(s, c) + 1)))
 		return(NULL);
-	tab[count] = 0;
-	
+	x = 0;
+	while(s[i])
+	{
+		if (s[i] != c)
+		{
+			len = i;
+			while (s[len] && s[len] != c)
+				len++;
+			(tab[x] = ft_substr(s, i, len - i))? x++ : ft_freetab(tab);
+			i = len;
+		}
+		else 
+			i++;
+	}
+	if(tab)
+		tab[x]= 0;
+	return(tab);
 }

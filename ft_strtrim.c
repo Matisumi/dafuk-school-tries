@@ -6,7 +6,7 @@
 /*   By: savitull <savitull@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/15 14:28:57 by savitull          #+#    #+#             */
-/*   Updated: 2020/07/01 10:13:26 by savitull         ###   ########.fr       */
+/*   Updated: 2020/07/02 14:41:30 by savitull         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 static int 	ft_isnotwanted(char c, char const *set)
 {
-	int		i;
+	size_t	i;
 
 	i = 0;
 	while (set[i])
@@ -30,27 +30,25 @@ static char *ft_empty()
 {
 	char	*ret;
 
-	if(!(ret = (char*)malloc(sizeof(char))))
+	if(!(ret = (char*)ft_calloc(1 ,sizeof(char))))
 		return(NULL);
-	ret[0] = 0;
 	return(ret);
 }
 
 char		*ft_strtrim(char const *s1, char const *set)
 {
 	char	*new;
-	int 	i;
-	int 	len;
+	size_t	i;
+	size_t	len;
 
 	if(s1 == NULL)
 		return(NULL);
-	len = ft_strlen(s1);
+	len = ft_strlen(s1) - 1;
 	i = 0;
 	while(ft_isnotwanted(s1[i], set))
 		i++;
-	if(i == 0 || i == len)
+	if(s1[i] == 0)
 		return(new = ft_empty());
-	len--;
 	while(ft_isnotwanted(s1[len], set))
 		len--;
 	len = len - i;

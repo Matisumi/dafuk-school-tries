@@ -41,18 +41,29 @@ SRCP2	=	ft_substr.c 	\
 			ft_putendl_fd.c \
 			ft_putnbr_fd.c
 
+SRCB1	=	ft_lstnew.c 	\
+			ft_lstsize.c 	\
+			ft_lstlast.c 	\
+			ft_lstadd_back.c\
+			ft_lstadd_front.c
+
 OBJP1	=	$(SRCP1:.c=.o)
 
 OBJP2	=	$(SRCP2:.c=.o)
+
+OBJB1	=	$(SRCB1:.c=.o)
 
 all :	$(NAME) clean
 
 $(NAME):
 		$(CC) -c $(SRCP1) $(SRCP2) $(CFLAGS)
 		ar -rc $(NAME) $(OBJP1) $(OBJP2)
+bonus :
+		$(CC) -c $(SRCB1) $(CFLAGS)
+		ar -rc $(NAME) $(OBJB1)
 
 clean :
-		rm -f $(OBJP1) $(OBJP2)
+		rm -f $(OBJP1) $(OBJP2) $(OBJB1)
 
 fclean:	clean
 		rm -f $(NAME)

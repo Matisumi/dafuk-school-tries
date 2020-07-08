@@ -6,16 +6,20 @@
 /*   By: savitull <savitull@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/08 15:24:04 by savitull          #+#    #+#             */
-/*   Updated: 2020/07/08 15:50:10 by savitull         ###   ########.fr       */
+/*   Updated: 2020/07/08 17:21:45 by savitull         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdio.h>
 #include "libft.h"
 
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
 	t_list  *newlst;
 	t_list	*newitem;
+
+	newlst = 	NULL;
+	newitem =	NULL;
 
 	while(lst)
 	{

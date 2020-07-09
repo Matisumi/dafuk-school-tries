@@ -6,7 +6,7 @@
 /*   By: savitull <savitull@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/15 14:30:15 by savitull          #+#    #+#             */
-/*   Updated: 2020/07/01 12:13:09 by savitull         ###   ########.fr       */
+/*   Updated: 2020/07/09 16:11:29 by savitull         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,19 +15,19 @@
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	unsigned int	i;
-	char 			*str;
+	char			*str;
 
 	i = 0;
-	if(!s || !*s)
-		return(NULL);
-	if((str = (char*)ft_calloc(ft_strlen(s) + 1, sizeof(char))))
+	if (!s || !*s)
+		return (NULL);
+	if ((str = (char*)ft_calloc(ft_strlen(s) + 1, sizeof(char))))
 	{
-		while(s[i])
+		while (s[i])
 		{
 			str[i] = f(i, s[i]);
 			i++;
 		}
-		return(str);
+		return (str);
 	}
-	return(NULL);
+	return (NULL);
 }

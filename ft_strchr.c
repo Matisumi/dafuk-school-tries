@@ -6,7 +6,7 @@
 /*   By: savitull <savitull@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/15 14:03:11 by savitull          #+#    #+#             */
-/*   Updated: 2020/06/18 15:20:36 by savitull         ###   ########.fr       */
+/*   Updated: 2020/07/09 16:16:14 by savitull         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,10 +21,9 @@ char	*ft_strchr(const char *s, int c)
 	x = (char)c;
 	i = 0;
 	str = (char *)s;
-
 	while (str[i] && str[i] != c)
 		i++;
 	if (str[i] == c)
-		return(&str[i]);
-	return(NULL);
+		return (&str[i]);
+	return (NULL);
 }

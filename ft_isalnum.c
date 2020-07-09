@@ -6,7 +6,7 @@
 /*   By: savitull <savitull@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/15 14:01:50 by savitull          #+#    #+#             */
-/*   Updated: 2020/06/16 10:02:08 by savitull         ###   ########.fr       */
+/*   Updated: 2020/07/09 16:22:19 by savitull         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,6 @@
 int		ft_isalnum(int c)
 {
 	if (ft_isdigit(c) || ft_isalpha(c))
-		return(1);
-	return(0);
+		return (1);
+	return (0);
 }

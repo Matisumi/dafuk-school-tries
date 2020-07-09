@@ -6,13 +6,13 @@
 /*   By: savitull <savitull@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/15 14:02:26 by savitull          #+#    #+#             */
-/*   Updated: 2020/06/18 11:53:13 by savitull         ###   ########.fr       */
+/*   Updated: 2020/07/09 16:36:18 by savitull         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int 	ft_isprint(int c)
+int		ft_isprint(int c)
 {
-	if(c >= ' ' && c <= '~')
-		return(1);
-	return(0);
+	if (c >= ' ' && c <= '~')
+		return (1);
+	return (0);
 }

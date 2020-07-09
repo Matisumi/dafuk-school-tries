@@ -6,7 +6,7 @@
 /*   By: savitull <savitull@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/15 13:52:32 by savitull          #+#    #+#             */
-/*   Updated: 2020/06/17 17:07:45 by savitull         ###   ########.fr       */
+/*   Updated: 2020/07/09 16:18:38 by savitull         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,11 +22,11 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	ori = (unsigned char *)src;
 	i = 0;
 	if (dst == NULL && src == NULL)
-		return(0);
+		return (0);
 	while (i < n)
 	{
 		new[i] = ori[i];
 		i++;
 	}
-	return(dst);
+	return (dst);
 }

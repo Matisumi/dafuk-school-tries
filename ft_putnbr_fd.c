@@ -6,7 +6,7 @@
 /*   By: savitull <savitull@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/15 14:33:27 by savitull          #+#    #+#             */
-/*   Updated: 2020/07/02 15:29:20 by savitull         ###   ########.fr       */
+/*   Updated: 2020/07/09 16:24:46 by savitull         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,6 @@ void	ft_putnbr_fd(int n, int fd)
 	}
 	else
 		nbr = n;
-
 	if (nbr >= 10)
 		ft_putnbr_fd((nbr / 10), fd);
 	ft_putchar_fd((nbr % 10) + '0', fd);

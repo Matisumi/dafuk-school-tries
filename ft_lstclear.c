@@ -6,7 +6,7 @@
 /*   By: savitull <savitull@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/08 14:08:57 by savitull          #+#    #+#             */
-/*   Updated: 2020/07/08 15:14:23 by savitull         ###   ########.fr       */
+/*   Updated: 2020/07/09 16:20:48 by savitull         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
 	t_list *next;
 
-	while(*lst)
+	while (*lst)
 	{
 		next = (*lst)->next;
 		ft_lstdelone(*lst, del);

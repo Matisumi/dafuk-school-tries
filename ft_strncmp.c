@@ -6,7 +6,7 @@
 /*   By: savitull <savitull@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/15 14:05:20 by savitull          #+#    #+#             */
-/*   Updated: 2020/06/18 16:03:40 by savitull         ###   ########.fr       */
+/*   Updated: 2020/07/09 16:10:38 by savitull         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,7 @@ int		ft_strncmp(const char *s1, const char *s2, size_t n)
 	i = 0;
 	str1 = (unsigned char *)s1;
 	str2 = (unsigned char *)s2;
-
-	while (str1[i] && str2[i] && i < (n-1))
+	while (str1[i] && str2[i] && i < (n - 1))
 		i++;
-	return(str1[i] - str2[i]);
+	return (str1[i] - str2[i]);
 }

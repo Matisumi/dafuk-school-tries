@@ -6,13 +6,13 @@
 /*   By: savitull <savitull@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/15 14:02:15 by savitull          #+#    #+#             */
-/*   Updated: 2020/06/15 15:34:28 by savitull         ###   ########.fr       */
+/*   Updated: 2020/07/09 16:22:05 by savitull         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int		ft_isascii(int c)
 {
 	if (c >= 0 && c <= 127)
-		return(1);
-	return(0);
+		return (1);
+	return (0);
 }

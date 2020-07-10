@@ -57,7 +57,7 @@ OBJP2	=	$(SRCP2:.c=.o)
 
 OBJB1	=	$(SRCB1:.c=.o)
 
-all :	$(NAME) clean
+all :	$(NAME)
 
 $(NAME):
 		$(CC) -c $(SRCP1) $(SRCP2) $(CFLAGS)

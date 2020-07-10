@@ -6,7 +6,7 @@
 /*   By: savitull <savitull@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/16 09:52:29 by savitull          #+#    #+#             */
-/*   Updated: 2020/07/09 15:55:02 by savitull         ###   ########.fr       */
+/*   Updated: 2020/07/10 14:17:47 by savitull         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,5 +71,8 @@ void				ft_lstclear(t_list **lst, void (*del)(void *));
 void				ft_lstiter(t_list *lst, void (*f)(void *));
 t_list				*ft_lstmap(t_list *lst, void *(*f)(void *),
 								void (*del)(void *));
+
+void				ft_swap(void *p1, void *p2);
+void				ft_sort_tab(int *tab, size_t len);
 
 #endif

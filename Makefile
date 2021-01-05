@@ -51,6 +51,8 @@ SRCB1	=	ft_lstnew.c 	\
 			ft_lstmap.c 	\
 			ft_lstadd_front.c
 
+SRCB2	=	
+
 OBJP1	=	$(SRCP1:.c=.o)
 
 OBJP2	=	$(SRCP2:.c=.o)

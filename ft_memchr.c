@@ -6,7 +6,7 @@
 /*   By: savitull <savitull@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/15 13:58:53 by savitull          #+#    #+#             */
-/*   Updated: 2020/07/09 16:19:14 by savitull         ###   ########.fr       */
+/*   Updated: 2021/01/05 12:13:00 by savitull         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,5 @@ void	*ft_memchr(const void *s, int c, size_t n)
 			return (&str[i]);
 		i++;
 	}
-	if (str[i] == x)
-		return (&str[i]);
 	return (NULL);
 }

@@ -6,7 +6,7 @@
 /*   By: savitull <savitull@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/10 13:59:35 by savitull          #+#    #+#             */
-/*   Updated: 2020/07/10 14:20:41 by savitull         ###   ########.fr       */
+/*   Updated: 2021/01/05 11:22:35 by savitull         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,10 +27,10 @@ void	ft_sort_tab(int *tab, size_t len)
 		{
 			if (tab[i] > tab[i + 1])
 			{
-				ft_swap(tab[i], tab[i + 1]);
+				ft_swap(&tab[i], &tab[i + 1]);
 				flag = 1;
 			}
-			i++
+			i++;
 		}
 	}
 }

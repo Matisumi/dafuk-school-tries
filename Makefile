@@ -51,7 +51,10 @@ SRCB1	=	ft_lstnew.c 	\
 			ft_lstmap.c 	\
 			ft_lstadd_front.c
 
-SRCB2	=	
+SRCB2	=	ft_free_ctab_bonus.c\
+			ft_sort_tab_bonus.c \
+			ft_strclr_bonus.c 	\
+			ft_swap_bonus.c 
 
 OBJP1	=	$(SRCP1:.c=.o)
 
@@ -59,17 +62,19 @@ OBJP2	=	$(SRCP2:.c=.o)
 
 OBJB1	=	$(SRCB1:.c=.o)
 
+OBJB2	=	$(SRCB2:.c=.o)
+
 all :	$(NAME)
 
 $(NAME):
 		$(CC) -c $(SRCP1) $(SRCP2) $(CFLAGS)
 		ar -rc $(NAME) $(OBJP1) $(OBJP2)
 bonus :
-		$(CC) -c $(SRCB1) $(CFLAGS)
-		ar -rc $(NAME) $(OBJB1)
+		$(CC) -c $(SRCB1) $(SRCB2) $(CFLAGS)
+		ar -rc $(NAME) $(OBJB1)	$(OBJB2)
 
 clean :
-		rm -f $(OBJP1) $(OBJP2) $(OBJB1)
+		rm -f $(OBJP1) $(OBJP2) $(OBJB1) $(OBJB2)
 
 fclean:	clean
 		rm -f $(NAME)

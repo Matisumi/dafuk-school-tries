@@ -6,14 +6,15 @@
 /*   By: savitull <savitull@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/10 13:53:31 by savitull          #+#    #+#             */
-/*   Updated: 2020/07/10 14:36:36 by savitull         ###   ########.fr       */
+/*   Updated: 2021/01/05 11:26:48 by savitull         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_swap(void *p1, void *p2)
+void	ft_swap(int *p1, int *p2)
 {
-	void	*ptmp;
+	int	*ptmp;
 
+	ptmp = 0;
 	*ptmp = *p1;
 	*p1 = *p2;
 	*p2 = *ptmp;

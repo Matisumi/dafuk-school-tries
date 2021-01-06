@@ -1,26 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_free_ctab_bonus.c                               :+:      :+:    :+:   */
+/*   libft_bonus.h                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: savitull <savitull@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/07/10 14:26:07 by savitull          #+#    #+#             */
-/*   Updated: 2021/01/06 10:45:41 by savitull         ###   ########.fr       */
+/*   Created: 2021/01/06 10:41:51 by savitull          #+#    #+#             */
+/*   Updated: 2021/01/06 10:52:01 by savitull         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft_bonus.h"
+#ifndef LIBFT_BONUS_H
 
-void	ft_free_ctab(char **tab)
-{
-	size_t i;
+# define LIBFT_BONUS_H
 
-	i = 0;
-	while (tab[i])
-	{
-		ft_strclr(tab[i]);
-		i++;
-	}
-	free(tab);
-}
+# include "libft.h"
+void				ft_swap(void *p1, void *p2);
+void				ft_sort_tab(int *tab, size_t len);
+void				ft_strclr(char *str);
+void				ft_free_ctab(char **tab);
+
+#endif

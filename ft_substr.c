@@ -15,9 +15,12 @@
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char	*new;
-
+	
+	if(!s || !*s)
+		return (NULL);
 	if (!(new = ft_calloc(len + 1, sizeof(char))))
 		return (NULL);
-	ft_strlcpy(new, &s[start], len + 1);
+	if(start < ft_strlen(s))
+		ft_strlcpy(new, &s[start], len + 1);
 	return (new);
 }

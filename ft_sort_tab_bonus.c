@@ -6,11 +6,11 @@
 /*   By: savitull <savitull@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/10 13:59:35 by savitull          #+#    #+#             */
-/*   Updated: 2021/01/06 10:46:02 by savitull         ###   ########.fr       */
+/*   Updated: 2021/01/08 13:19:15 by savitull         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft_bonus.h"
+#include "libft.h"
 
 void	ft_sort_tab(int *tab, size_t len)
 {

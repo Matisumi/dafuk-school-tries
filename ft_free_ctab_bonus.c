@@ -6,11 +6,11 @@
 /*   By: savitull <savitull@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/10 14:26:07 by savitull          #+#    #+#             */
-/*   Updated: 2021/01/06 10:45:41 by savitull         ###   ########.fr       */
+/*   Updated: 2021/01/08 13:18:58 by savitull         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft_bonus.h"
+#include "libft.h"
 
 void	ft_free_ctab(char **tab)
 {

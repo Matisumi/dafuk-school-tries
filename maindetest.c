@@ -1,33 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strmapi.c                                       :+:      :+:    :+:   */
+/*   maindetest.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: savitull <savitull@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/06/15 14:30:15 by savitull          #+#    #+#             */
-/*   Updated: 2021/01/15 15:17:20 by savitull         ###   ########.fr       */
+/*   Created: 2021/01/15 10:53:46 by savitull          #+#    #+#             */
+/*   Updated: 2021/01/15 15:09:09 by savitull         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdio.h>
 #include "libft.h"
 
-char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
+char	ft_troll(unsigned int i, char c)
 {
-	unsigned int	i;
-	char			*str;
+	if (ft_isalpha(i))
+		i = c;
+	return (i);
+}
 
-	i = 0;
-	if (!s || !f)
-		return (NULL);
-	if ((str = (char*)ft_calloc(ft_strlen(s) + 1, sizeof(char))))
-	{
-		while (s[i])
-		{
-			str[i] = f(i, s[i]);
-			i++;
-		}
-		return (str);
-	}
-	return (NULL);
+int		main()
+{
+	if (ft_strmapi("", &ft_troll) != NULL)
+		printf("=====TEST MAPI=====\n==>ok");
+	else
+		printf("=====TEST MAPI=====\n==> NOPE");
 }
